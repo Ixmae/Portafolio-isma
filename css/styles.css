@@ -1,0 +1,278 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    justify-content: space-between;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: #bdbbbb;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    padding: 10px 15px;
+    color: #000000;
+    font-size: 15px;
+}
+
+.idioma {
+    color: #8c00ab;
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #8c00ab;
+}
+
+.active a,
+.menu li a:hover {
+    background-color: #8c00ab;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all ease 0.4s;
+}
+
+.presentacion {
+
+    padding-left: 15%;
+    padding-right: 5%;
+    display: flex;
+    transform: translate(-20%,-50%);
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    width: 80%;
+}
+
+.presentacion h1{
+    font-size: 50px;
+}
+
+#img {
+    width: 35%;
+}
+
+#nosotros {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: #161616;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+    color: white;
+}
+
+#nosotros h1 {
+    font-size: xx-large;
+}
+
+#nosotros h2 {
+    color: #8c00ab;
+}
+
+.explicacion {
+    width: 60%;
+    padding-right: 100px;
+}
+
+#pre-expositor {
+    top: 1000px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#pre-expositor h1{
+    color: #8c00ab;
+    font-size: 50px;
+}
+
+#expositor {
+    width: 95%;
+    height: 100%;
+    top: 1000px;
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+}
+
+#expositor img {
+    width: 100%;
+}
+
+.caja {
+    opacity: 0.7;
+}
+
+.caja:hover {
+    opacity: 1;
+}
+
+#contactanos {
+    width: 99%;
+    height: 60%;
+    top: 1000px;
+    display: flex;
+    position: relative;
+    padding-left: 20px;
+    background-color: #161616;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.p-izquierda {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-izquierda button {
+    width: 60%;
+    height: 50px;
+    background-color: #8c00ab;
+    font-weight: bold;
+    padding-right: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+
+.p-derecha {
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid rgba(255,255,255,0.08);
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre input {
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #929292;
+    color: #FFFFFF;
+    margin: 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.correo {
+    display: flex;
+    flex-direction: column;
+}
+
+.correo input {
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #929292;
+    color: #FFFFFF;
+    margin: 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje {
+    font-size: 25px;
+    color: #ffffff;
+    margin: 20px;
+}
+
+textarea {
+    width: 100% !important;
+    height: 320px !important;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #EBEBEB;
+    font-size: 16px;
+}
+
+@media(max-width:900px) {
+
+nav {
+    padding: 10px 30px;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #0F0F0F;
+    top: 50px;
+    left: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    display: none !important;
+    border: 3px solid #1F1F1F;
+}
+
+    nav .menu li a {
+        border-bottom: 1px solid rgba(255,255,255,0.10);
+        color: #ffffff !important;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+nav .menu {
+    padding: 0px;
+    margin: 0px;
+}
+
+#img {
+    display: none;
+}
+
+.mini-logo {
+    display: none;
+}
+}
